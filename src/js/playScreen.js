@@ -39,11 +39,11 @@ function checkKey(e) {
     break;
   }
 
-  if (newPosition.length == 3) {
+  let missingChars = 4 - newPosition.length;
+
+  for (let i = 0; i < missingChars; i++) {
     newPosition = "0" + newPosition;
   }
-
-  console.log(currentPosition);
 
   document.getElementById(currentPosition).innerHTML = "";
   document.getElementById(newPosition).innerHTML = "test";
