@@ -23,6 +23,8 @@ function fillTable() {
   }
 
   document.getElementById(currentPosition).innerHTML = "test";
+  document.getElementById(currentPosition).backgroundImage = "url('../../resources/images/CH-FORWARDS.png')";
+
 }
 
 function checkKey(e) {
